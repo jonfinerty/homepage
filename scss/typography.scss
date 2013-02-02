@@ -3,8 +3,6 @@
 	This file contains all the different fonts, styling and sizes needed
 */
 
-@import 'color';
-
 .massive-text {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
@@ -28,5 +26,12 @@
 	font-weight: 700;
 	font-size: 20px;
 	text-transform: uppercase;
-	color: $background-colour;	
+	color: $background-colour;
+	@include surround-shadow(1px, 1px, $title-text-colour);
+	@include transition(all, 0.5s, ease-in-out);
+}
+
+.inverted .tile-text {
+	color: $title-text-colour;
+	@include surround-shadow(1px, 1px, $background-colour);
 }

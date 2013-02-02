@@ -20,6 +20,12 @@ $fontAwesomePath:   "../font" !default;
   -webkit-font-smoothing: antialiased;
   font-size: 240px;
   color: $title-text-colour;
+  @include transition(all, 0.5s, ease-in-out);
+}
+
+.inverted [class^="icon-"],
+.inverted [class*=" icon-"] {
+  color: $background-colour;
 }
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen

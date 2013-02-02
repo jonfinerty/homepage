@@ -3,9 +3,9 @@
    Used for general layouts
 */
 
+@import 'mixins';
 @import 'color';
 @import 'typography';
-@import 'mixins';
 @import 'icons';
 
 body {
@@ -40,7 +40,7 @@ body {
 .fade-in {  
     position: absolute;
     @include opacity(0);
-    @include transition(all, 1s, ease-in-out);    
+    @include transition(all, 1s, ease-in-out);
 }
 
 .fade-in:hover {
@@ -68,13 +68,18 @@ body {
     text-align: center;
 
     position: relative;
+
+    @include transition(all, 0.5s, ease-in-out);
+
+    &.inverted {
+        background-color: $title-text-colour;
+    }
 }
 
 .overlay-text {    
     position: absolute;
     bottom: 60px;
-    width: 240px;
-    @include surround-shadow(1px, 1px, $title-text-colour);
+    width: 240px;    
 }
 
 .purple {
