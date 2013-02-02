@@ -17,3 +17,4 @@
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
+    Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome
