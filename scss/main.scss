@@ -72,8 +72,27 @@ body {
     @include transition(all, 0.5s, ease-in-out);
 
     &.inverted {
-        background-color: $title-text-colour;
+        background-color: $light-grey;
     }
+}
+
+.tile-img-fade-in {  
+    position: absolute;
+    @include opacity(0);
+    @include transition(all, 0.5s, ease-in-out);
+}
+
+.inverted .tile-img-fade-in {
+    @include opacity(1);    
+}
+
+.tile-img-fade-out {      
+    @include opacity(1);
+    @include transition(all, 0.5s, ease-in-out);
+}
+
+.inverted .tile-img-fade-out {
+    @include opacity(0);    
 }
 
 .overlay-text {    
