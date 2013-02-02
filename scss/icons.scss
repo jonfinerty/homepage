@@ -1,7 +1,5 @@
 
 $fontAwesomePath:   "../font" !default;
-$borderColor:       #eee;
-$iconMuted:         #eee;
 
 @font-face {
   font-family: 'FontAwesome';
@@ -21,6 +19,7 @@ $iconMuted:         #eee;
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
   font-size: 240px;
+  color: $title-text-colour;
 }
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
