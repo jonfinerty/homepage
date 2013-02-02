@@ -1,5 +1,53 @@
 
-// Main Sass file
-// Used for general layouts
+/* Main Sass file
+   Used for general layouts
+*/
 
-@import "normalize.scss";
+@import 'color';
+@import 'mixins';
+
+body {
+    background-color: $background-colour;
+    padding: 3%;
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.title {
+    padding-left: 20px;
+    float: left;
+}
+
+.profile-pic {
+    @include circle-borders;
+
+    width: 120px;
+    height: 120px;
+    float: left;
+    overflow: hidden;
+    background-color: $tile-background-colour;
+}
+
+.tile-group {
+    margin-left: 15%;
+    max-width: 1000px;
+    clear: both;
+}
+
+.tile {
+    @include rounded-corners(5px);
+
+    width: 240px;
+    height: 240px;
+
+    background-color: $tile-background-colour;
+    float: left;
+
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
