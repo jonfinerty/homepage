@@ -8,5 +8,24 @@ $tile-background-colour: blue;
 
 $background-colour: #F0F0F0;
 
+/* Text Colours */
+
 $title-text-colour: #222;
 $title-text-shadow: #DDD;
+
+$text-backgound-highlight-colour: #A095EE;
+$text-highlight-colour: $background-colour;
+
+
+
+::-moz-selection {
+    background-color: $text-backgound-highlight-colour;
+    color: $text-highlight-colour;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: $text-backgound-highlight-colour;
+    color: $text-highlight-colour;
+    text-shadow: none;
+}
