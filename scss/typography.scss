@@ -25,8 +25,10 @@
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 20px;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: $background-colour;
+
 	@include surround-shadow(1px, 1px, $title-text-colour);
 	@include transition(all, 0.5s, ease-in-out);
 }
