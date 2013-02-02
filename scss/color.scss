@@ -4,19 +4,22 @@
 
 	All the colours used across the site
 */
-$tile-background-colour: blue;
+$tile-background-colour: #666;
 
 $background-colour: #F0F0F0;
 
+$shadow-colour: #DDD;
+$purple: #A095EE;
+$bright-purple: #6755E3;
 /* Text Colours */
 
 $title-text-colour: #222;
-$title-text-shadow: #DDD;
+$title-text-shadow: $shadow-colour;
 
-$text-backgound-highlight-colour: #A095EE;
+$embed-shadow-colour: #EEE;
+
+$text-backgound-highlight-colour: $purple;
 $text-highlight-colour: $background-colour;
-
-
 
 ::-moz-selection {
     background-color: $text-backgound-highlight-colour;

@@ -13,13 +13,11 @@ body {
 }
 
 .header {
-    margin-bottom: 20px;    
-    overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.title {
+.header-text {
     padding-left: 20px;
-    padding-top: 20px;
     float: left;
 }
 
@@ -28,21 +26,22 @@ body {
     height: 120px;
     float: left;
     position: relative;
-    overflow: hidden;
 }
 
 .round-img {    
     @include circle-borders;
+    box-shadow: 0 0 10px $purple;
 }
 
 .fade-in {  
     position: absolute;
     @include opacity(0);
-    @include transition(opacity, 1s, ease-in-out);
+    @include transition(all, 1s, ease-in-out);    
 }
 
 .fade-in:hover {
     @include opacity(1);
+    box-shadow: 0 0 10px $bright-purple;
 }
 
 .tile-group {
@@ -52,12 +51,13 @@ body {
 }
 
 .tile {
-    @include rounded-corners(5px);
+    @include rounded-corners(2px);
 
     width: 240px;
     height: 240px;
 
     background-color: $tile-background-colour;
+
     float: left;
 
     margin-right: 40px;
