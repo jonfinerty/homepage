@@ -32,3 +32,10 @@
 	opacity: $opacity;
 }
 
+@mixin surround-shadow($size, $blur, $colour) {
+	text-shadow: 0 -$size $blur $colour, 
+				 $size 0 $blur $colour, 
+				 0 $size $blur $colour, 
+				 -$size 0 $blur $colour;
+}
+
