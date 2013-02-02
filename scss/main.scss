@@ -13,9 +13,7 @@ body {
 }
 
 .header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    //background-color: red;
+    margin-bottom: 20px;    
     overflow: hidden;
 }
 
@@ -26,13 +24,25 @@ body {
 }
 
 .profile-pic {
-    @include circle-borders;
-
     width: 120px;
     height: 120px;
     float: left;
+    position: relative;
     overflow: hidden;
-    background-color: $tile-background-colour;
+}
+
+.round-img {    
+    @include circle-borders;
+}
+
+.fade-in {  
+    position: absolute;
+    @include opacity(0);
+    @include transition(opacity, 1s, ease-in-out);
+}
+
+.fade-in:hover {
+    @include opacity(1);
 }
 
 .tile-group {

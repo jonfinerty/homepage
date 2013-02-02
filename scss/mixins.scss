@@ -5,15 +5,30 @@
 */
 
 @mixin circle-borders {
-    -webkit-border-radius: 50%;
-    -khtml-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-khtml-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 
 @mixin rounded-corners($radius: 10px) {
 	-webkit-border-radius: $radius;
-    -khtml-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
+	-khtml-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
 }
+
+@mixin transition($property: all, $duration: 1s, $rate: ease-in-out, $delay: 0s) {
+	-webkit-transition: $property $duration $rate $delay;
+	-moz-transition: $property $duration $rate $delay;
+	-o-transition: $property $duration $rate $delay;
+	transition: $property $duration $rate $delay;
+}
+
+@mixin opacity($opacity) {
+	filter:alpha(opacity=$opacity*100);
+	-khtml-opacity: $opacity;
+	-moz-opacity: $opacity;
+	opacity: $opacity;
+}
+
