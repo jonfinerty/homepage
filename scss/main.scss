@@ -4,6 +4,7 @@
 */
 
 @import 'color';
+@import 'typography';
 @import 'mixins';
 
 body {
@@ -14,12 +15,13 @@ body {
 .header {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: red;
+    //background-color: red;
     overflow: hidden;
 }
 
 .title {
     padding-left: 20px;
+    padding-top: 20px;
     float: left;
 }
 

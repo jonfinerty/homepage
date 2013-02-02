@@ -1,0 +1,17 @@
+
+/* Typography!
+	This file contains all the different fonts, styling and sizes needed
+*/
+
+@import 'color';
+
+.massive-text {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 72px;
+	text-transform: uppercase;
+
+	color: $title-text-colour;
+	text-shadow: 0 1px 0 $title-text-shadow;
+}
+
