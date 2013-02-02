@@ -3,11 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jonathan Finerty -Site Creator and Subject - JonathanFinerty.com
 
 # THANKS
 
-    <name>
+    The folks at Huddle - www.huddle.com - for allowing me to learn, whilst everyone else is working.
+    Dan Hough - www.danhough.com - for making so much stuff that I feel like I have to atleast put something out there, also for humouring me.
+    My brother - For being smarter than me; gives me something to aim and chase after.
+    My parents - For being parenty.
+
 
 # TECHNOLOGY COLOPHON
 
