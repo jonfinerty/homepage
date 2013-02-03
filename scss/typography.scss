@@ -41,3 +41,27 @@ a, a:link, a:hover, a:active, a:visited {
 	color: $title-text-colour;
 	@include surround-shadow(1px, 1px, $background-colour);
 }
+
+.info-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: $title-text-colour;
+	text-shadow: 1px 1px 0 $background-colour;
+}
+
+.info-tagline {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: $title-text-colour;
+	text-shadow: 1px 1px 0 $background-colour;
+}
+
+.info-desc {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: $title-text-colour;
+	text-shadow: 1px 1px 0 $background-colour;
+}

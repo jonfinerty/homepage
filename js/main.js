@@ -9,4 +9,14 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.profile-pic').click(function(){
+		if ($('.bw').attr('src') === 'img/profile_bw.png') {
+			$('.bw').attr('src', 'img/profile2_bw.png');
+			$('.colour').attr('src', 'img/profile2_colour.png');
+		} else {
+			$('.bw').attr('src', 'img/profile_bw.png');
+			$('.colour').attr('src', 'img/profile_colour.png');
+		}
+	});
+
 });
