@@ -11,18 +11,21 @@
 body {
     background-color: $background-colour;
     padding-top: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 6%;
+    padding-right: 6%;
     padding-bottom: 3%;
 }
 
 .header {
     overflow: hidden;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 
 .header-text {
-    padding-left: 20px;
+    padding-left: 40px;
     float: left;
 }
 
@@ -35,7 +38,7 @@ body {
 
 .round-img {    
     @include circle-borders;
-    box-shadow: 0 0 10px $purple;
+    box-shadow: 0 0 10px $light-grey;
 }
 
 .fade-in {  
@@ -46,17 +49,17 @@ body {
 
 .fade-in:hover {
     @include opacity(1);
-    box-shadow: 0 0 10px $bright-purple;
+    box-shadow: 0 0 20px $red;
 }
 
 .tile-group {
-    margin-left: 16%;
-    max-width: 800px;
+    margin-left: 170px;
+    max-width: 1000px;
     clear: both;
 }
 
 .tile {
-    @include rounded-corners(3px);
+    @include rounded-corners(5px);
 
     width: 240px;
     height: 240px;
@@ -69,6 +72,8 @@ body {
     text-align: center;
 
     position: relative;
+
+    box-shadow: 2px 2px 0 $title-text-shadow;
 
     @include transition(all, 0.5s, ease-in-out);
 

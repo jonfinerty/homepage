@@ -3,6 +3,10 @@
 	This file contains all the different fonts, styling and sizes needed
 */
 
+a, a:link, a:hover, a:active, a:visited {
+	text-decoration: none;
+}
+
 .massive-text {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
