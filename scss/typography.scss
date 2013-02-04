@@ -37,10 +37,10 @@ a, a:link, a:hover, a:active, a:visited {
 	@include transition(all, 0.5s, ease-in-out);
 }
 
-.inverted .tile-text {
-	color: $title-text-colour;
-	@include surround-shadow(1px, 1px, $background-colour);
-}
+// .inverted .tile-text {
+// 	color: $title-text-colour;
+// 	@include surround-shadow(1px, 1px, $background-colour);
+// }
 
 .info-title {
 	font-family: 'Raleway', sans-serif;
