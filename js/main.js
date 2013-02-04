@@ -19,7 +19,7 @@ $(document).ready(function(){
 		}
 	});
 	
-	setTimeout(rotateProject, 8000);
+	setTimeout(rotateProject, 6000);
 });
 
 
@@ -36,5 +36,5 @@ function rotateProject(){
 		$('.rotate .info-desc').text('Lets you play snake with your code.');
 	}
 	
-	setTimeout(rotateProject, 8000);
+	setTimeout(rotateProject, 6000);
 }
