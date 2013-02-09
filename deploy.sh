@@ -2,9 +2,6 @@
 repo=/home/jon/homepage
 site=/home/jon/public/jonathanfinerty.com/public
 
-echo Wiping Current Site...
-rm -r $site/*
-
 echo Deploying Homepage Site...
 cp -r $repo/* $site
 mkdir $site/css
