@@ -18,7 +18,7 @@ $(document).ready(function(){
 			$('.colour').attr('src', 'img/profile_colour.png');
 		}
 	});
-	
+
 	setTimeout(rotateProject, 6000);
 });
 
@@ -35,6 +35,6 @@ function rotateProject(){
 		$('.rotate .info-tagline').text('A Plugin for Sublime Text 2');
 		$('.rotate .info-desc').text('Lets you play snake with your code.');
 	}
-	
+
 	setTimeout(rotateProject, 6000);
 }

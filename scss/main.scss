@@ -6,18 +6,20 @@
 @import 'mixins';
 @import 'color';
 @import 'typography';
-@import 'icons';
 
-body {
-    background-color: $background-colour;
+body {    
     padding-top: 1%;
-    padding-left: 16%;    
     padding-bottom: 3%;
+    background-color: white;
 }
 
 .header {
     overflow: hidden;
-    width: 84%; 
+    width: 64%;
+    max-width: 720px;
+    min-width: 240px;
+    margin: auto;
+    clear: both;
     padding-bottom: 20px;
 }
 
@@ -26,7 +28,6 @@ body {
 }
 
 .header-text {
-    /*padding-left: 40px;*/
     min-width: 240px;
     float: left;
 }
@@ -36,11 +37,6 @@ body {
     height: 120px;
     float: left;
     position: relative;
-}
-
-.round-img {    
-    @include circle-borders;
-    box-shadow: 0 0 10px $light-grey;
 }
 
 .fade-in {  
@@ -54,28 +50,24 @@ body {
     box-shadow: 0 0 20px $red;
 }
 
-.tile-group {
-    /*margin-left: 170px;*/
-    max-width: 1000px;
+.tile-group {    
+    max-width: 720px;
     clear: both;
+    min-width: 240px;
+    margin: auto;
+    width: 64%;
 }
 
 .tile {
-    @include rounded-corners(5px);
-
     width: 240px;
     height: 240px;
 
     float: left;
 
-    margin-right: 40px;
-    margin-bottom: 40px;
-
     text-align: center;
-
-    position: relative;
-
-    box-shadow: 2px 2px 0 $title-text-shadow;
+    
+    position: relative; 
+    z-index: -1;  
 
     @include transition(all, 0.5s, ease-in-out);
 
@@ -97,7 +89,7 @@ body {
 }
 
 .info {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 20px;
@@ -159,4 +151,78 @@ body {
 
 .yellow {
     background-color: $yellow;
+}
+
+.plum {
+    background-color: $plum;
+}
+
+.open-left {
+    transition: all 1.5s;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.open-right {
+    transition: all 1.5s;
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+}
+
+.open-down {
+    transition: all 1.5s;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.open-up {
+    transition: all 1.5s;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.perspective-root {
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+    float: left;
+}
+
+.perspective-root:hover .open-left {
+    -webkit-transform: rotateY(-110deg);
+    transform: rotateY(130deg);
+    z-index: 3;
+}
+
+.perspective-root:hover .open-right {
+    -webkit-transform: rotateY(110deg);
+    transform: rotateY(130deg);
+    z-index: 3;
+}
+
+.perspective-root:hover .open-down {
+    -webkit-transform: rotateX(-110deg);
+    transform: rotateX(130deg);
+    z-index: 3;
+}
+
+.perspective-root:hover .open-up {
+    -webkit-transform: rotateX(110deg);
+    transform: rotateY(130deg);
+    z-index: 3;
+}
+
+.hidden-text {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    z-index: -3;
+    text-align: center;
+    background-color: $shadow-colour;    
+    box-shadow: inset 0px 0px 15px $title-text-colour;
+}
+
+@media (min-width: 1125px) {
+    br {
+        clear: left;
+    }
 }

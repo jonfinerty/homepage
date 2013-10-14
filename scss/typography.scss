@@ -13,8 +13,7 @@ a, a:link, a:hover, a:active, a:visited {
 	font-size: 72px;
 	text-transform: uppercase;
 
-	color: $title-text-colour;
-	text-shadow: 1px 4px 0 $title-text-shadow;
+	color: $title-text-colour;	
 }
 
 .subtle-text {
@@ -36,11 +35,6 @@ a, a:link, a:hover, a:active, a:visited {
 	@include surround-shadow(1px, 1px, $title-text-colour);
 	@include transition(all, 0.5s, ease-in-out);
 }
-
-// .inverted .tile-text {
-// 	color: $title-text-colour;
-// 	@include surround-shadow(1px, 1px, $background-colour);
-// }
 
 .info-title {
 	font-family: 'Raleway', sans-serif;
@@ -64,4 +58,18 @@ a, a:link, a:hover, a:active, a:visited {
 	font-size: 13px;
 	color: $title-text-colour;
 	text-shadow: 1px 1px 0 $background-colour;
+}
+
+.big-icon {
+	font-size: 240px;
+	color: $title-text-colour;
+}
+
+.tile .icon-facebook {
+	line-height: 260px;
+}
+
+.tile .icon-envelope-alt {
+	font-size: 200px;
+	line-height: 230px;
 }
