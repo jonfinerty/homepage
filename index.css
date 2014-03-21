@@ -20,21 +20,22 @@ a, a:link, a:hover, a:active, a:visited {
   font-weight: 100;
   font-size: 72px;
   text-transform: uppercase;
-  color: #222222; }
+  color: #222222;
+}
 
 .info-title {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 100;
+  font-size: 52px;
   color: #222222;
-  text-shadow: 1px 1px 0 #f0f0f0; }
+}
 
 .info-desc {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: #222222;
-  text-shadow: 1px 1px 0 #f0f0f0; }
+}
 
 .big-icon {
   font-size: 240px;
@@ -93,7 +94,7 @@ body {
 }
 
 .info {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 20px; }
@@ -140,7 +141,6 @@ body {
   position: absolute;
   z-index: -3;
   text-align: center;
-  background-color: #dddddd;
   box-shadow: inset 0px 0px 15px #222222; }
 
 @media (min-width: 1125px) {
