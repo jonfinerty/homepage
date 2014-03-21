@@ -73,6 +73,7 @@ a, a:link, a:hover, a:active, a:visited {
   text-align: center;
   position: relative;
   z-index: -1;
+  transition: background-color 0.5s ease-in-out 0s;
 }
 
 .tile:hover {
