@@ -1,0 +1,302 @@
+/* Main Sass file
+   Used for general layouts
+*/
+/*
+	Mixins!
+
+	Used mainly for cross browser support stuff
+*/
+/*
+	Colours!
+
+	All the colours used across the site
+*/
+/* Pastel Colours */
+/* Text Colours */
+::-moz-selection {
+  background-color: #a095ee;
+  color: #f0f0f0;
+  text-shadow: none; }
+
+::selection {
+  background-color: #a095ee;
+  color: #f0f0f0;
+  text-shadow: none; }
+
+/* Typography!
+	This file contains all the different fonts, styling and sizes needed
+*/
+a, a:link, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
+.massive-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 72px;
+  text-transform: uppercase;
+  color: #222222; }
+
+.subtle-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222222;
+  text-shadow: 1px 1px 0 #eeeeee; }
+
+.tile-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  text-shadow: -1px 1px #222222, 1px 0 1px #222222, 0 1px 1px #222222, -1px 0 1px #222222;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
+
+.info-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #222222;
+  text-shadow: 1px 1px 0 #f0f0f0; }
+
+.info-tagline {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222222;
+  text-shadow: 1px 1px 0 #f0f0f0; }
+
+.info-desc {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #222222;
+  text-shadow: 1px 1px 0 #f0f0f0; }
+
+.big-icon {
+  font-size: 240px;
+  color: #222222; }
+
+.tile .icon-facebook {
+  line-height: 260px; }
+
+.tile .icon-envelope-alt {
+  font-size: 200px;
+  line-height: 230px; }
+
+body {
+  padding-top: 1%;
+  padding-bottom: 3%;
+  background-color: white; }
+
+.header {
+  overflow: hidden;
+  width: 64%;
+  max-width: 720px;
+  min-width: 240px;
+  margin: auto;
+  clear: both;
+  padding-bottom: 20px; }
+
+.title-break {
+  display: inline-block; }
+
+.header-text {
+  min-width: 240px;
+  float: left; }
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  float: left;
+  position: relative; }
+
+.fade-in {
+  position: absolute;
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out 0s;
+  -moz-transition: all 1s ease-in-out 0s;
+  -o-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s; }
+
+.fade-in:hover {
+  filter: alpha(opacity=100);
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  box-shadow: 0 0 20px #ff7878; }
+
+.tile-group {
+  max-width: 720px;
+  clear: both;
+  min-width: 240px;
+  margin: auto;
+  width: 64%; }
+
+.tile {
+  width: 240px;
+  height: 240px;
+  float: left;
+  text-align: center;
+  position: relative;
+  z-index: -1;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
+  .tile.inverted {
+    background-color: #999999; }
+
+.popout {
+  z-index: -1;
+  position: absolute;
+  top: 20px;
+  background-color: #dddddd;
+  height: 200px;
+  width: 140px;
+  margin-left: 100px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
+
+.info {
+  padding-top: 60px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 20px; }
+
+.info-tagline {
+  padding-top: 8px;
+  padding-bottom: 12px; }
+
+.inverted .popout {
+  margin-left: 240px; }
+
+.tile-img-fade-in {
+  position: absolute;
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
+
+.inverted .tile-img-fade-in {
+  filter: alpha(opacity=100);
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1; }
+
+.tile-img-fade-out {
+  filter: alpha(opacity=100);
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s; }
+
+.inverted .tile-img-fade-out {
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0; }
+
+.overlay-text {
+  position: absolute;
+  bottom: 60px;
+  width: 240px; }
+
+.purple {
+  background-color: #a095ee; }
+
+.green {
+  background-color: #a6e3bb; }
+
+.orange {
+  background-color: #f2d383; }
+
+.red {
+  background-color: #ff7878; }
+
+.blue {
+  background-color: #a7d1e8; }
+
+.yellow {
+  background-color: #eaf173; }
+
+.plum {
+  background-color: #e3aad6; }
+
+.open-left {
+  transition: all 1.5s;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%; }
+
+.open-right {
+  transition: all 1.5s;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%; }
+
+.open-down {
+  transition: all 1.5s;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%; }
+
+.open-up {
+  transition: all 1.5s;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%; }
+
+.perspective-root {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  float: left; }
+
+.perspective-root:hover .open-left {
+  -webkit-transform: rotateY(-110deg);
+  transform: rotateY(130deg);
+  z-index: 3; }
+
+.perspective-root:hover .open-right {
+  -webkit-transform: rotateY(110deg);
+  transform: rotateY(130deg);
+  z-index: 3; }
+
+.perspective-root:hover .open-down {
+  -webkit-transform: rotateX(-110deg);
+  transform: rotateX(130deg);
+  z-index: 3; }
+
+.perspective-root:hover .open-up {
+  -webkit-transform: rotateX(110deg);
+  transform: rotateY(130deg);
+  z-index: 3; }
+
+.hidden-text {
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  z-index: -3;
+  text-align: center;
+  background-color: #dddddd;
+  box-shadow: inset 0px 0px 15px #222222; }
+
+@media (min-width: 1125px) {
+  .new-line-tile {
+    clear: left; } }

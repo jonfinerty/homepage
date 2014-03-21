@@ -1,4 +1,0 @@
-
-# Ignore all base css files. All style will be in Sass and compiled to css
-*.css
-*.scssc
