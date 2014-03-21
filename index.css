@@ -80,6 +80,7 @@ a, a:link, a:hover, a:active, a:visited {
   float: left;
   text-align: center;
   position: relative;
+  z-index: -1;
 }
 
 .tile:hover {
@@ -125,18 +126,22 @@ a, a:link, a:hover, a:active, a:visited {
   transition: all 1.5s;
   -webkit-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
+  z-index: 3;
 }
 
 .perspective-root {
   -webkit-perspective: 1500px;
+  -moz-transform: perspective(1500px);
+  -moz-transform-style: preserve-3d;
   perspective: 1500px;
   float: left;
+  display: block;
+  overflow: visible;
 }
 
 .perspective-root:hover .open-up {
   -webkit-transform: rotateX(110deg);
-  transform: rotateY(130deg);
-  z-index: 3;
+  transform: rotateX(110deg);
 }
 
 .hidden-text {
