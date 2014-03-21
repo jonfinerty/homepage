@@ -15,6 +15,7 @@ body {
   background-color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
+  color: #222222;
 }
 
 .header {
@@ -32,26 +33,19 @@ body {
   float: left;
   font-size: 72px;
   text-transform: uppercase;
-  color: #222222;
 }
 
 .title-break {
   display: inline-block;
 }
 
-
-a, a:link, a:hover, a:active, a:visited {
-  text-decoration: none; }
-
 .info-title {
   font-size: 52px;
-  color: #222222;
 }
 
 .info-desc {
   font-weight: 400;
   font-size: 14px;
-  color: #222222;
 }
 
 .big-icon {
@@ -59,13 +53,17 @@ a, a:link, a:hover, a:active, a:visited {
   color: #222222;
 }
 
-.tile .icon-facebook {
-  line-height: 260px;
+.fa-facebook {
+  padding-top: 10px;
 }
 
-.tile .icon-envelope-alt {
+.fa-envelope-o {
   font-size: 200px;
-  line-height: 230px;
+  padding-top: 14px;
+}
+
+a, a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
 }
 
 .tile-group {
@@ -82,11 +80,6 @@ a, a:link, a:hover, a:active, a:visited {
   float: left;
   text-align: center;
   position: relative;
-  z-index: -1;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
 }
 
 .tile:hover {
