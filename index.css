@@ -9,49 +9,13 @@
   color: #f0f0f0;
   text-shadow: none; }
 
-/* Typography!
-	This file contains all the different fonts, styling and sizes needed
-*/
-a, a:link, a:hover, a:active, a:visited {
-  text-decoration: none; }
-
-.massive-text {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 72px;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.info-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 52px;
-  color: #222222;
-}
-
-.info-desc {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #222222;
-}
-
-.big-icon {
-  font-size: 240px;
-  color: #222222; }
-
-.tile .icon-facebook {
-  line-height: 260px; }
-
-.tile .icon-envelope-alt {
-  font-size: 200px;
-  line-height: 230px; }
-
 body {
   padding-top: 1%;
   padding-bottom: 3%;
-  background-color: white; }
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
 
 .header {
   overflow: hidden;
@@ -60,21 +24,57 @@ body {
   min-width: 240px;
   margin: auto;
   clear: both;
-  padding-bottom: 20px; }
-
-.title-break {
-  display: inline-block; }
+  padding-bottom: 20px;
+}
 
 .header-text {
   min-width: 240px;
-  float: left; }
+  float: left;
+  font-size: 72px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.title-break {
+  display: inline-block;
+}
+
+
+a, a:link, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
+.info-title {
+  font-size: 52px;
+  color: #222222;
+}
+
+.info-desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: #222222;
+}
+
+.big-icon {
+  font-size: 240px;
+  color: #222222;
+}
+
+.tile .icon-facebook {
+  line-height: 260px;
+}
+
+.tile .icon-envelope-alt {
+  font-size: 200px;
+  line-height: 230px;
+}
 
 .tile-group {
   max-width: 720px;
   clear: both;
   min-width: 240px;
   margin: auto;
-  width: 64%; }
+  width: 64%;
+}
 
 .tile {
   width: 240px;
@@ -97,43 +97,54 @@ body {
   padding-top: 40px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 .purple {
-  background-color: #a095ee; }
+  background-color: #a095ee;
+}
 
 .green {
-  background-color: #a6e3bb; }
+  background-color: #a6e3bb;
+}
 
 .orange {
-  background-color: #f2d383; }
+  background-color: #f2d383;
+}
 
 .red {
-  background-color: #ff7878; }
+  background-color: #ff7878;
+}
 
 .blue {
-  background-color: #a7d1e8; }
+  background-color: #a7d1e8;
+}
 
 .yellow {
-  background-color: #eaf173; }
+  background-color: #eaf173;
+}
 
 .plum {
-  background-color: #e3aad6; }
+  background-color: #e3aad6;
+}
 
 .open-up {
   transition: all 1.5s;
   -webkit-transform-origin: 50% 0%;
-  transform-origin: 50% 0%; }
+  transform-origin: 50% 0%;
+}
 
 .perspective-root {
   -webkit-perspective: 1500px;
   perspective: 1500px;
-  float: left; }
+  float: left;
+}
 
 .perspective-root:hover .open-up {
   -webkit-transform: rotateX(110deg);
   transform: rotateY(130deg);
-  z-index: 3; }
+  z-index: 3;
+}
 
 .hidden-text {
   width: 240px;
@@ -141,8 +152,10 @@ body {
   position: absolute;
   z-index: -3;
   text-align: center;
-  box-shadow: inset 0px 0px 15px #222222; }
+  box-shadow: inset 0px 0px 15px #222222;
+}
 
 @media (min-width: 1125px) {
   .new-line-tile {
-    clear: left; } }
+    clear: left; }
+}
