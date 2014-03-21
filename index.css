@@ -103,10 +103,6 @@ a, a:link, a:hover, a:active, a:visited {
   background-color: #eaf173;
 }
 
-.plum {
-  background-color: #e3aad6;
-}
-
 .open-up {
   transition: all 1.5s;
   -webkit-transform-origin: 50% 0%;
