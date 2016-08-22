@@ -135,13 +135,13 @@ a, a:link, a:hover, a:active, a:visited {
   box-shadow: inset 0px 0px 15px #222222;
 }
 
-.huddle-title {
+.movivo-title {
   padding-top: 30px;
   font-size: 52px;
   color: #0089D0;
 }
 
-.huddle-desc {
+.movivo-desc {
   font-weight: 400;
   font-size: 14px;
 }
